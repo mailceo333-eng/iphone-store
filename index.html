@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxe iPhone Store</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0d0d0d;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #00eaff;
+    font-size: 26px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #00eaff;
+}
+
+/* Hero */
+.hero {
+    padding: 120px 60px;
+    background: radial-gradient(circle, #111, #000);
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 52px;
+    background: linear-gradient(90deg, #00eaff, #ff4ecd);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+/* Sections */
+section {
+    padding: 80px 60px;
+}
+
+.section-title {
+    font-size: 38px;
+    margin-bottom: 40px;
+    background: linear-gradient(90deg, #ff4ecd, #00eaff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Products */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #151515;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    color: #00eaff;
+}
+
+.card p {
+    color: #ccc;
+}
+
+/* Media */
+.media {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.media img, .media video {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Team */
+.team {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.team-member {
+    background: #151515;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.team-member h4 {
+    margin-top: 15px;
+    color: #ff4ecd;
+}
+
+/* Contact */
+.contact {
+    max-width: 600px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.contact button {
+    padding: 12px 30px;
+    background: linear-gradient(90deg, #00eaff, #ff4ecd);
+    border: none;
+    border-radius: 30px;
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #000;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Luxe iPhone</h1>
+    <nav>
+        <a href="#shop">Shop</a>
+        <a href="#accessories">Accessories</a>
+        <a href="#media">Media</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h2>Premium iPhones & Accessories</h2>
+    <p>Experience innovation, elegance, and power in every device.</p>
+</div>
+
+<section id="shop">
+    <h2 class="section-title">iPhones</h2>
+    <div class="products">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7" alt="iPhone">
+            <h3>iPhone 15 Pro</h3>
+            <p>Power meets perfection.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="iPhone">
+            <h3>iPhone 14</h3>
+            <p>Smart. Sleek. Reliable.</p>
+        </div>
+    </div>
+</section>
+
+<section id="accessories">
+    <h2 class="section-title">Accessories</h2>
+    <div class="products">
+        <div class="card">
+		<img src="https://images.unsplash.com/photo-1583394838336-acd977736f90">
+            <h3>AirPods Pro</h3>
+            <p>Immersive sound.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1602526219049-9d5b3b2cfc91">
+            <h3>MagSafe Case</h3>
+            <p>Style & protection.</p>
+        </div>
+    </div>
+</section>
+
+<section id="media">
+    <h2 class="section-title">Media Catalog</h2>
+    <div class="media">
+        <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab">
+
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Us</h2>
+    <p>We deliver premium Apple products with trust, speed, and excellence.</p>
+
+    <h2 class="section-title">Our Team</h2>
+    <div class="team">
+        <div class="team-member">
+            <img src="https://i.pravatar.cc/100">
+            <h4>Alex Morgan</h4>
+            <p>Founder</p>
+        </div>
+
+        <div class="team-member">
+            <img src="https://i.pravatar.cc/101">
+            <h4>Jane Cole</h4>
+            <p>Sales Lead</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button>Send Message</button>
+    </div>
+</section>
+
+<footer>
+    © 2026 Luxe iPhone Store. All rights reserved.
+</footer>
+
+</body>
+</html>
